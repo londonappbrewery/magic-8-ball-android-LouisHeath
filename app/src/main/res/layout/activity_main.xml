@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +9,31 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
-</RelativeLayout>
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorLightGreen"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="150px"
+        android:text="@string/header"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/image_ball"
+        app:srcCompat="@drawable/ball1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100px"/>
+
+    <Button
+        android:id="@+id/button_roll"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:text="@string/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
